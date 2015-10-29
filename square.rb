@@ -9,8 +9,6 @@ class Square < Rectangle
 		@h = w
 	end
 
-	# def draw()
-	# 	super.draw
-	# end
+
 
 end

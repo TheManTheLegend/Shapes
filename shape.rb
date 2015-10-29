@@ -12,7 +12,7 @@ class Shape
 		@lines.each do |line|
 			line.draw
 		end
-		
+		fill
 	end	
 
 	def add_lines(lines)

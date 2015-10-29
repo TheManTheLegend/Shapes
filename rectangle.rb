@@ -15,15 +15,15 @@ class Rectangle < Shape
 		@lines.push(create_right)
 		@lines.push(create_top)
 		@lines.push(create_bottom)
-		@lines.push(fill)
+		# @lines.push(fill)
 		add_lines(@lines)
 		
 	end
 
 	def fill
-		# for i in (@y..@y+@h)
-		# 	Line.new(@x, i, @x+@w, i, @color)
-		# end	
+		for i in (0..@w)
+			Line.new(@x, i + @y, @x+@w, i + @y, @color).draw
+		end
 	end	
 
 	def create_right
