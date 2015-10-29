@@ -12,6 +12,7 @@ class Shape
 		@lines.each do |line|
 			line.draw
 		end
+		
 	end	
 
 	def add_lines(lines)

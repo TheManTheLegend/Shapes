@@ -1,6 +1,7 @@
 require_relative "shape"
 require_relative "line"
 
+
 class Rectangle < Shape
 
 	def initialize(x, y, w, h, color)
@@ -14,12 +15,16 @@ class Rectangle < Shape
 		@lines.push(create_right)
 		@lines.push(create_top)
 		@lines.push(create_bottom)
+		@lines.push(fill)
 		add_lines(@lines)
+		
 	end
 
-	def draw
-		draw
-	end
+	def fill
+		# for i in (@y..@y+@h)
+		# 	Line.new(@x, i, @x+@w, i, @color)
+		# end	
+	end	
 
 	def create_right
 		Line.new(@x + @w, @y, @x + @w, @y + @h, @color)

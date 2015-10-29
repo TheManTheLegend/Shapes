@@ -6,10 +6,11 @@ class Square < Rectangle
 
 	def initialize(x, y, w, color)
 		super(w, w, x, y, color)
+		@h = w
 	end
 
-	def draw()
-		super.draw
-	end
+	# def draw()
+	# 	super.draw
+	# end
 
 end
