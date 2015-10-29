@@ -24,6 +24,9 @@ class Rectangle < Shape
 		for i in (0..@w)
 			Line.new(@x, i + @y, @x+@w, i + @y, @color).draw
 		end
+		for i in (0..@h)
+			Line.new(@x, i + @y, @x+@w, i + @y, @color).draw
+		end
 	end	
 
 	def create_right

@@ -6,11 +6,11 @@ class Main < Gosu::Window
 	def initialize
 		super(640, 480)
 
-		@square = Square.new(90, 90, 20, Gosu::Color.argb(0xff_ff0000))
+		@shape = Rectangle.new(90, 90, 100, 150, Gosu::Color.argb(0xff_ff0000))
 	end
 
 	def draw
-		@square.draw
+		@shape.draw
 	end
 
 end
