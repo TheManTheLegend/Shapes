@@ -15,7 +15,6 @@ class Rectangle < Shape
 		@lines.push(create_right)
 		@lines.push(create_top)
 		@lines.push(create_bottom)
-		# @lines.push(fill)
 		add_lines(@lines)
 		
 	end
